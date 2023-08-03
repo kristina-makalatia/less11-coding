@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Our Websiset description" />
+    <meta name="keywords" content="HTML, CSS, FLEX,resposnove, form" />
+    <meta name="author" content="Kristina" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 11</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-block">
+      <div class="flex-header">
+        <a href="index.html">LOGO</a>
+        <nav class="navigation">
+          <ul class="nav-ul">
+            <li><a href="">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="burger-bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section id="contact-section">
+      <h3>Contact us</h3>
+      <form class="form-container" action="">
+        <div class="form-wraper">
+          <label for="username">Username</label>
+          <input
+            class="input-field"
+            type="text"
+            id="username"
+            name="myusername"
+            placeholder="Username..."
+            required
+          />
+        </div>
+
+        <div class="form-wraper">
+          <label for="passw">Password</label>
+          <input
+            class="input-field"
+            type="password"
+            id="passw"
+            name="mypassword"
+            placeholder="Password..."
+            required
+          />
+        </div>
+
+        <div class="form-wraper">
+          <label for="mycount">Country</label>
+          <select class="select" name="mycountry" id="mycount">
+            <option value="none" selected disabled hidden>
+              Choose Your Country
+            </option>
+            <option value="georgia">Georgia</option>
+            <option value="greece">Greece</option>
+            <option value="germany">Germany</option>
+            <option value="usa">Usa</option>
+          </select>
+        </div>
+
+        <div class="form-wraper">
+          <label for="review">Your Review</label>
+          <textarea
+            class="textarea-field"
+            name="review"
+            id="review"
+            cols="30"
+            rows="10"
+            placeholder="Your Review..."
+          ></textarea>
+        </div>
+        <button class="btn-submit" type="submit">გაგზავნა</button>
+      </form>
+    </section>
+
+    <section id="about-section">
+      <h3>About Us</h3>
+      <img
+        class="image"
+        src="https://imgv3.fotor.com/images/blog-cover-image/part-blurry-image.jpg"
+        alt=""
+      />
+    </section>
+  </body>
+</html>

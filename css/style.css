@@ -1,0 +1,85 @@
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+.header-block {
+    background-color: lightblue;
+    padding: 20px;
+    height: 72px;
+}
+.burger-bar {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.image {
+    height: 800px;
+    width: 100%;
+}
+
+
+/* form styles */
+.form-wraper {
+    display: flex;
+    flex-direction: column;
+}
+.form-container {
+    max-width: 700px;
+    width: 100%;
+    margin:0 auto;
+}
+.input-field {
+    /* max-width: 600px;
+    width: 100%; */
+    height: 60px;
+    margin: 20px 0;
+    color:red;
+    font-size: 18px;
+    border:none;
+    border-bottom: 2px solid #000;
+}
+/* .input-field[type="password"] {
+    background-color: blue;
+} */
+.btn-submit {
+    width: 150px;
+    background-color: blueviolet;
+    border:none;
+    border-radius: 20px;
+    height: 50px;
+    color: #fff;
+    margin-top: 25px;
+}
+.input-field::placeholder,
+.textarea-field::placeholder {
+    color: blue;
+    font-size: 14px;
+}
+.input-field:focus,
+.textarea-field:focus {
+    outline: none;
+}
+.select {
+    height: 60px;
+}
+.textarea-field {
+    resize: none;
+}
+
+
+
+/* resposnive */
+@media (min-width: 320px) and (max-width: 480px) {
+    .navigation {
+        display: none;
+    }
+    .burger-bar {
+        display: block;
+    }
+}
